@@ -39,6 +39,33 @@ public class Exercises {
 		}
 
 		// TODO: same, but use an enum for the operation instead of a char
+		
+		operatori z= operatore();
+		
+		switch (z) {
+		case addizione:
+			System.out.println("The sum of a and b is ... " + (a + b));
+			break;
+		case sottrazione:
+			System.out.println("The subtraction of a and b is ... " + (a - b));
+			break;
+		case divisione:
+			System.out.println("The division of a and b is ... " + (a / b));
+			break;
+		case moltiplicazione:
+			System.out.println("The product of a and b is ... " + (a * b));
+			break;
+		default:
+			System.out.println("I don't understand");
+			break;
+		}
+		
 
 	}
+	
+	
+	private static operatori operatore() {
+        operatori[] m = operatori.values();
+        return m[(int) (Math.random() * m.length)];
+    }
 }
