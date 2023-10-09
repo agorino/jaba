@@ -27,3 +27,4 @@ public class Exercises {
         System.out.println("Gauss summation formula: " + (x * (x + 1) / 2));
     }
 }
+
